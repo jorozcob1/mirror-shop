@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="carrucel.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | NovusHaus</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__logo"><a href="#">VidrioPlus</a></div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Inicio</a></li>
+          <li class="link"><a href="#choose">Nosotros</a></li>
+          <li class="link"><a href="#craft">Productos</a></li>
+          <li class="link"><a href="#testimonial">Testimonios</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+        <div class="nav__actions">
+          <span><i class="ri-search-fill"></i></span>
+          <span><i class="ri-user-fill"></i></span>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>Haz tu Interior Más Minimalista y Moderno</h1>
+        <p>
+          Transforma cualquier espacio con vidrios para lograr un estilo
+          minimalista y moderno de manera rápida y sencilla.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Search furniture" />
+          <button><i class="ri-search-line"></i></button>
+        </form>
+        <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+      </div>
+    </header>
+    <section class="section__container choose__container" id="choose">
+      <img class="choose__bg" src="assets/dot-bg.png" alt="bg" />
+      <div class="choose__content">
+        <h2 class="section__header">Por Qué Elegirnos</h2>
+        <p class="section__subheader">
+          Experimenta una creatividad y experiencia inigualables en diseño de
+          interiores. Descubre por qué somos la elección correcta para tu
+          espacio soñado.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-truck-line"></i></span>
+            <h4>Envío Rápido y Gratuito</h4>
+            <p>
+              Eleva tu diseño interior con nuestro servicio de Envío Rápido y
+              Gratuito sin demoras.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-shopping-bag-3-line"></i></span>
+            <h4>Fácil de Comprar</h4>
+            <p>
+              Descubre la elegancia sin esfuerzo: explora nuestras soluciones de
+              diseño interior fáciles de comprar.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-customer-service-2-line"></i></span>
+            <h4>Soporte 24/7</h4>
+            <p>
+              Experimenta tranquilidad sabiendo que nuestro equipo dedicado está
+              disponible todo el día.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-loop-right-line"></i></span>
+            <h4>Devoluciones Sin Problemas</h4>
+            <p>
+              Creemos en la combinación perfecta, y si no encaja del todo, hacer
+              devoluciones es muy sencillo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="choose__image">
+        <img
+          src="https://ciudadreal.ayeryhoyrevista.com/wp-content/uploads/sites/2/2019/10/Alberdi-Vidrio_1_1567169656.jpg"
+          alt="choose"
+        />
+      </div>
+    </section>
+
+    <!-- <section class="offer__container" id="offer">
+      <div class="offer__grid__top">
+        <img src="assets/offer-1.jpg" alt="offer" />
+        <img src="assets/offer-2.jpg" alt="offer" />
+        <img src="assets/offer-3.jpg" alt="offer" />
+        <div class="offer__content">
+          <h2 class="section__header">Smart Offers</h2>
+          <p class="section__subheader">
+            Explore exclusive deals to transform your interior with style
+          </p>
+          <button class="btn">Explore Now</button>
+        </div>
+      </div>
+      <div class="offer__grid__bottom">
+        <img src="assets/offer-4.jpg" alt="offer" />
+        <img src="assets/offer-5.jpg" alt="offer" />
+        <img src="assets/offer-6.jpg" alt="offer" />
+        <img src="assets/offer-7.jpg" alt="offer" />
+      </div>
+    </section> -->
+    <section class="offer__container swiper-container" id="offer">
+      <div class="swiper-wrapper"></div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+    <section class="section__container craft__container" id="craft">
+      <div class="craft__content">
+        <h2 class="section__header">Elaborado con excelentes materiales</h2>
+        <p class="section__subheader">Eleva tu espacio con calidad y estilo</p>
+        <button class="btn">Explorar</button>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img
+            src="https://ciudadreal.ayeryhoyrevista.com/wp-content/uploads/sites/2/2019/10/Alberdi-PisosVidrio_Textura3.jpg"
+            alt="craft"
+          />
+          <p>Silla Nórdica</p>
+          <h4>$65.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img
+            src="https://i.pinimg.com/236x/3c/3e/16/3c3e16388b4063095c526e90347859f2.jpg"
+            alt="craft"
+          />
+          <p>Sillón con Respaldo Alto</p>
+          <h4>$50.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPk1sQBbW1lzJoH-qyOIfrActXNh8In_EjbA&sassets/craft-3.png"
+            alt="craft"
+          />
+          <p>Silla de Acento</p>
+          <h4>$70.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+    </section>
+
+    <section class="section__container modern__container" id="modern">
+      <div class="modern__image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiYN5qshmGCRs_L8LU97XbDnpKo4s6Lrsn-8hSOvD45429o0g0n3mJyew2K59FydMnL5E&usqp=CAU"
+          alt="bg"
+          class="modern__bg"
+        />
+        <img
+          src="https://www.elmueble.com/medio/2023/10/23/puerta-de-cristal-00570354_a73c4bef_00570354_231023132217_1627x2000.jpg"
+          alt="modern"
+          class="modern__img-1"
+        />
+        <img
+          src="https://www.reflectiv.com/c/19-category_large/colores.jpg"
+          alt="modern"
+          class="modern__img-2"
+        />
+        <img
+          src="https://devitroeuropa.com/wp-content/uploads/2017/10/puertas-correderas-cristal-vidrio-2.jpg"
+          alt="modern"
+          class="modern__img-3"
+        />
+      </div>
+      <div class="modern__content">
+        <h2 class="section__header">
+          Te ayudamos a diseñar con vidrio moderno
+        </h2>
+        <p class="section__subheader">
+          Transforma tu espacio con nuestra experiencia en diseño contemporáneo
+          con vidrio: Déjanos guiarte en la creación de interiores elegantes y
+          funcionales que aprovechen al máximo las propiedades del vidrio.
+        </p>
+        <div class="modern__grid">
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              Nuestro equipo se especializa en crear soluciones de vidrio
+              personalizadas que combinan estética moderna y funcionalidad.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              Mantenemos al día con las últimas tendencias en diseño de vidrio,
+              asegurando que tu espacio sea contemporáneo y visualmente
+              impresionante.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              El uso del vidrio en diseño no solo mejora la estética, sino
+              también la funcionalidad y la luminosidad del espacio.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              Nos encargamos de todos los aspectos del proceso de implementación
+              del vidrio, desde el diseño inicial hasta la instalación final.
+            </p>
+          </div>
+        </div>
+        <button class="btn">Explorar</button>
+      </div>
+    </section>
+
+    <section class="section__container testimonial__container" id="testimonial">
+      <h2 class="section__header">Testimonios de Clientes</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Trabajar con ellos fue una experiencia excepcional. Su habilidad
+                para trabajar con vidrio transformó completamente mi espacio en
+                un ambiente moderno y funcional. Ahora tengo un hogar que no
+                solo es hermoso, sino también práctico gracias a su excelente
+                trabajo.
+              </p>
+              <img src="assets/profile-pic-1.jpg" alt="testimonial" />
+              <h4>Samuel Gómez</h4>
+              <h5>Cliente Satisfecho</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Contraté sus servicios para instalar vidrios en mi oficina y
+                superaron mis expectativas. La innovación en sus diseños y la
+                calidad en la instalación han mejorado significativamente
+                nuestro entorno laboral. Recomiendo encarecidamente sus
+                servicios para cualquier proyecto de vidrio.
+              </p>
+              <img src="assets/profile-pic-2.jpg" alt="testimonial" />
+              <h4>María Rodríguez</h4>
+              <h5>Dueña de Empresa</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Estoy encantado con el resultado final de mi proyecto de
+                renovación con vidrio. Lograron captar perfectamente mi visión
+                de un espacio elegante y luminoso. Gracias a su experiencia en
+                diseño con vidrio, ahora tengo un hogar que refleja mi estilo
+                personal de manera sorprendente.
+              </p>
+              <img src="assets/profile-pic-3.jpg" alt="testimonial" />
+              <h4>Luisa Martínez</h4>
+              <h5>Entusiasta del Diseño de Interiores</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Quiero agradecerles por su profesionalismo y dedicación en cada
+                etapa del proyecto. Desde la planificación hasta la ejecución
+                final, su equipo ha demostrado ser experto en el uso del vidrio
+                para crear espacios modernos y atractivos. ¡Sin duda los
+                volvería a elegir!
+              </p>
+              <img src="assets/profile-pic-4.jpg" alt="testimonial" />
+              <h4>José Pérez</h4>
+              <h5>Cliente Frecuente</h5>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section__container blog_container" id="blog">
+      <h2 class="section__header">Artículos Recientes</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjew1nwn47OCeiuFI6pCzy8Bzh188cXwksw&s"
+            alt="blog"
+          />
+          <h4>Innovación en el Uso del Vidrio en Diseño de Interiores</h4>
+          <p>
+            <span>por</span> VidrioCreativo <span>el</span> 18 de Abril, 2022
+          </p>
+        </div>
+        <div class="blog__card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPgePHyKQWiFSZQk8YQPvQTVGyVJs55dNIQ&s"
+            alt="blog"
+          />
+          <h4>Tecnología y Vanguardia en Proyectos de Vidrio</h4>
+          <p>
+            <span>por</span> ProyectosVidrio <span>el</span> 10 de Noviembre,
+            2022
+          </p>
+        </div>
+        <div class="blog__card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIYboYaa4h4ikfllmAhRuDc69pRd_GoGA2Q&s"
+            alt="blog"
+          />
+          <h4>Diseños Ecológicos y Modernos con Vidrio</h4>
+          <p>
+            <span>por</span> HogarVidrioVerde <span>el</span> 25 de Febrero,
+            2023
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h4>Contacto</h4>
+          <p>
+            Estamos aquí para ayudarte. Contáctanos para cualquier consulta o
+            información adicional.
+          </p>
+          <div class="footer__contact-info">
+            <p><strong>Teléfono:</strong> +123456789</p>
+            <p><strong>Correo electrónico:</strong> info@vidrioplus.com</p>
+          </div>
+          <div class="footer__social">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__form">
+          <form action="/">
+            <input
+              type="email"
+              placeholder="Ingresa tu correo electrónico"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <div class="footer__logo">
+          <h4><a href="#">Vidriería VidrioPlus</a></h4>
+          <p>
+            Derechos de autor © 2023 VidrioPlus. Todos los derechos reservados.
+          </p>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#">Acerca de Nosotros</a></li>
+          <li class="footer__link"><a href="#">Términos y Condiciones</a></li>
+          <li class="footer__link"><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <!-- Swiper JS -->
+  </body>
+</html>
